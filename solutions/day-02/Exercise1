@@ -1,0 +1,24 @@
+Exercises: What is React?
+
+What is React?
+
+React is a JavaScript library releases in May 2013 for building reusable UI 
+components.
+
+What is a library?
+
+A software library is a suite of data and programming code that is used to develop software programs and applications. 
+It is designed to assist both the programmer and the programming language compiler in building and executing software.
+A software library generally consists of pre-written code, classes, procedures, scripts, configuration data and more.
+
+What is a single page application?
+
+It is a web application that interacts with the web browser by dynamically rewriting the current web page with new 
+data from the web server, instead of the default method of the browser loading entire new pages.
+All necessary HTML, JavaScript, and CSS code is either retrieved by the browser with a single page load.
+
+What is a component ?
+What is the latest version of React?
+What is DOM?
+What is React Virtual DOM?
+What does a web application or a website(composed of) have?

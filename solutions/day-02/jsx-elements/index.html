@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Days Of React Challenge</title>
+    <style>
+        .main-wrapper {
+            background-color: orange;
+            padding: 10px;
+        }
+
+        .footer-wrapper {
+            background-color: green;
+            padding: 10px;
+        }
+
+        .app-wrapper {
+            background-color: blue;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const rootElement = document.querySelector("#root");
+
+        const personalInfo = {
+            "fullName": "Matias Barro",
+            "title": "Mr",
+            "country": "Argentina",
+            "gender": "Male",
+            "email": "matias.barro@gmail.com",
+            "phone": "11-1111-1111"
+        }
+
+        const main = (
+            <main className='main-wrapper'>
+                <h1>{personalInfo.fullName}</h1>
+                <p>Country: {personalInfo.country}</p>
+                <p>Title: {personalInfo.title}</p>
+                <p>Gender: {personalInfo.gender}</p>
+                <p>Email: {personalInfo.email}</p>
+                <p>Phone: {personalInfo.phone}</p>
+                <p>Hobbies:</p>
+                <ul>{['Travel', 'Gaming', 'Coding']}</ul>
+            </main>
+        );
+
+        const footer = (
+            <footer className='footer-wrapper'>
+                <p>Copyright Mati B - {new Date().getFullYear()}</p>
+            </footer>
+        )
+
+        const App = (
+            <div className='app-wrapper'>
+                {main}
+                {footer}
+            </div>
+        )
+
+        ReactDOM.render(App, rootElement)
+    </script>
+</body>
+
+</html>
